@@ -1,0 +1,33 @@
+.btn-edit{
+    //width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    //background-color: olivedrab;
+
+    &:hover{
+        background-color: transparent !important;
+        //color: olivedrab !important;
+    }
+}
+
+.btn-delete{
+    //width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    //background-color: red;
+
+    &:hover{
+        background-color: transparent !important;
+        //color: red !important;
+    }
+}
+
+.fa-sliders-h{
+    color: olivedrab;
+}
+
+.fa-trash{
+    color: red;
+}
