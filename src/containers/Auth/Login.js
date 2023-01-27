@@ -70,48 +70,48 @@ class Login extends Component {
 
 
         return (
-            <div class="login-background">
-                <div class="login-container">
-                    <div class="login-content row">
-                        <div class="col-12 text-login">Login</div>
-                        <div class="col-12 form-group login-input">
+            <div className="login-background">
+                <div className="login-container">
+                    <div className="login-content row">
+                        <div className="col-12 text-login">Login</div>
+                        <div className="col-12 form-group login-input">
                             <label>Username:</label>
                             <input type="text" 
-                            class="form-control" 
+                            className="form-control" 
                             placeholder='enter your username'
                             value={this.state.username}
                             onChange={(event)=> this.handleOnChangeUsername(event)}
                              />
                         </div>
-                        <div class="col-12 form-group login-input">
+                        <div className="col-12 form-group login-input">
                             <label>Password:</label>    
-                            <div class="custom-input-password">                               
+                            <div className="custom-input-password">                               
                                 <input type={this.state.showPassword ? 'text' : 'password'} 
-                                class="form-control" 
+                                className="form-control" 
                                 placeholder='enter your password' 
                                 value={this.state.password}
                                 onChange={(event)=> this.handleOnChangePassword(event)}    
                                 />
                                 <span onClick={() => {this.handleShowHidePassword()}}>
-                                    <i class={this.state.showPassword? 'fas fa-eye' : 'fas fa-eye-slash'}></i>
+                                    <i className={this.state.showPassword? 'fas fa-eye' : 'fas fa-eye-slash'}></i>
                                 </span>
                             </div>                          
                         </div>
-                        <div class="col-12" style={{color: 'red'}}>
+                        <div className="col-12" style={{color: 'red'}}>
                             { this.state.errMessage }
                         </div>
-                        <div class="col-12">
-                            <button class="btn-login" onClick={() => { this.handleLogin() }}>Login</button>
+                        <div className="col-12">
+                            <button className="btn-login" onClick={() => { this.handleLogin() }}>Login</button>
                         </div>
-                        <div class="col-12">
-                            <span class="forgot-password">Forgot your password?</span>
+                        <div className="col-12">
+                            <span className="forgot-password">Forgot your password?</span>
                         </div>
-                        <div class="col-12 text-center mt-3">
-                            <span class="text-other-login">Or login with: </span>
+                        <div className="col-12 text-center mt-3">
+                            <span className="text-other-login">Or login with: </span>
                         </div>
-                        <div class="col-12 social-login">
-                            <i class="fab fa-google google"></i>
-                            <i class="fab fa-facebook facebook"></i>
+                        <div className="col-12 social-login">
+                            <i className="fab fa-google google"></i>
+                            <i className="fab fa-facebook facebook"></i>
                         </div>
                     </div>
                 </div>
