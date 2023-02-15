@@ -10,6 +10,9 @@
         "check-health": "General health check",
         "support": "support"
     },
+    "search": {
+        "search": "Find a medical specialist"
+    },
     "banner": {
         "title1": "MEDICAL BACKGROUND",
         "title2": "COMPREHENSIVE HEALTH CARE",
